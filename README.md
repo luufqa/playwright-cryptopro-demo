@@ -26,10 +26,6 @@ GitHub may not render repository-hosted video files from the file browser. For q
 
 ## Screenshots
 
-Signed PDF opened in Chromium-Gost with the visible CryptoPro stamp:
-
-![Signed PDF with visible CryptoPro stamp](./docs/images/signed-pdf-stamp.png)
-
 Custom test report:
 
 ![Autotests QA dashboard](./docs/images/autotests-qa-dashboard.png)
