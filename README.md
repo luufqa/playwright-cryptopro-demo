@@ -122,6 +122,12 @@ If you initialize Git after running the tests, the report files will stay untrac
 git rm --cached -r reports
 ```
 
+## License
+
+This repository's own source code, tests, Dockerfile, report generator, PDF helper, documentation, and demo assets are released under the [MIT License](./LICENSE).
+
+CryptoPro CSP, Chromium-Gost, Debian packages, browser components, and other third-party software used by the base image keep their own licenses and terms. The public base image `docker.io/luufqa/debian-cryptopro:latest` is used here as a demo dependency and is not relicensed by this repository.
+
 ## Publish example
 
 ```bash
