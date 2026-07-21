@@ -18,9 +18,11 @@ The goal is to show that a fresh CryptoPro test CA certificate can be installed,
 
 ## Demo video
 
-<video src="./docs/images/cryptopro-signing-demo.mov" controls width="100%"></video>
+GitHub may not render repository-hosted video files from the file browser. For quick playback, click the preview image below or open the raw video link directly.
 
-[Open the demo video](./docs/images/cryptopro-signing-demo.mov)
+[![Watch the CryptoPro signing demo](./docs/images/signed-pdf-stamp.png)](https://raw.githubusercontent.com/luufqa/playwright-cryptopro-demo/main/docs/images/cryptopro-signing-demo.mov)
+
+[Watch or download the demo video](https://raw.githubusercontent.com/luufqa/playwright-cryptopro-demo/main/docs/images/cryptopro-signing-demo.mov)
 
 ## Screenshots
 
