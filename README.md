@@ -12,6 +12,24 @@ The demo uses the public base image:
 FROM docker.io/luufqa/debian-cryptopro:latest
 ```
 
+Docker image:
+
+```text
+docker.io/luufqa/playwright-cryptopro-demo
+```
+
+Docker Hub page:
+
+```text
+https://hub.docker.com/r/luufqa/playwright-cryptopro-demo
+```
+
+Source:
+
+```text
+https://github.com/luufqa/playwright-cryptopro-demo
+```
+
 The base image is part of the demo setup and provides Debian, CryptoPro CSP, Chromium-Gost, the CryptoPro browser signing stack, Xvfb, x11vnc, noVNC, and websockify. This project adds Playwright tests, PDF signing logic, visible PDF stamp generation, and an HTML QA report on top of that base image.
 
 The goal is to show that a fresh CryptoPro test CA certificate can be installed, a test document-signing certificate can be generated through the CryptoPro browser flow using entropy, and a PDF document can then be signed with that generated test certificate.
