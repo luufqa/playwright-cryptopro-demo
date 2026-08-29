@@ -48,6 +48,8 @@ class CryptoPro(Base):
             self.wait(2000)
             self.confirm_system_dialog(coord_set=1)
             self.wait(2000)
+            self.confirm_system_dialog(coord_set=4)
+            self.wait(2000)
             result = self.get_by_text(CryptoProLocators.NEW_CERT_INSTALLED, exact=True)
             result.wait_for(state="visible", timeout=30000)
             return result.inner_text()

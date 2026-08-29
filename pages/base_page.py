@@ -52,6 +52,7 @@ class Base:
                 1: (136, 264),  # OK button for the certificate selection dialog.
                 2: (1126, 680),  # OK button for the password dialog.
                 3: (138, 121),  # OK button for the certificate installation dialog.
+                4: (142, 73)  # OK button for agree install with two month available certificate.
             }
             window_names = {
                 1: ["Authentication - CryptoPro CSP", "CryptoPro CSP"],
