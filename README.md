@@ -68,36 +68,7 @@ The base image is currently published for `linux/amd64`, so specify the platform
 docker build --platform linux/amd64 -t playwright-cryptopro-demo:local .
 ```
 
-## Run
-
-By default, the container stays alive after successful tests. This keeps noVNC open with the signed PDF loaded in Chromium-Gost so you can inspect the result manually.
-
-```bash
-mkdir -p reports
-docker run --rm --platform linux/amd64 \
-  -p 8081:8081 \
-  -v "$PWD/reports:/app/reports" \
-  playwright-cryptopro-demo:local
-```
-
-The container runs:
-
-```bash
-pytest -m sign
-```
-
-After `test_sign` passes, it opens `reports/test_signed.pdf` in Chromium-Gost and waits until you stop the container.
-
-For CI or one-shot runs, disable the post-test noVNC hold:
-
-```bash
-docker run --rm --platform linux/amd64 \
-  -e KEEP_NOVNC_OPEN=false \
-  -v "$PWD/reports:/app/reports" \
-  playwright-cryptopro-demo:local
-```
-
-## Watch the browser with noVNC
+## Run and Watch the browser with noVNC
 
 The base image starts Xvfb, x11vnc, noVNC, and websockify automatically.
 
@@ -107,7 +78,7 @@ Expose port `8081` when you run the container:
 docker run --rm --platform linux/amd64 \
   -p 8081:8081 \
   -v "$PWD/reports:/app/reports" \
-  playwright-cryptopro-demo:local
+  luufqa/playwright-cryptopro-demo:latest
 ```
 
 Then open:
