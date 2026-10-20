@@ -2,6 +2,8 @@
 
 Demo project for running Playwright tests with Chromium-Gost and CryptoPro CSP in Docker.
 
+![Signing documents with a test certificate: Docker, Playwright, CryptoPro CSP](./docs/images/project-cover.png)
+
 ## Project goal
 
 This repository demonstrates an end-to-end document signing flow in a clean Docker environment.
